@@ -55,6 +55,7 @@ test('getThreeBandValue', () => {
 
 test('formatNumber', () => {
   expect(formatNumber(0)).toBe('0');
+  expect(formatNumber(0.05)).toBe('50m');
   expect(formatNumber(75)).toBe('75');
   expect(formatNumber(8500)).toBe('8.5k');
   expect(formatNumber(470000)).toBe('470k');
